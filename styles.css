@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Body text */
+    color: #ffffff;
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif; /* Headings */
+    color: #12ecf3; /* Optional: Match glowing accents */
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keeps particles in the background */
+}
+
+/* Navigation Bar */
+/* General Navigation Bar Styles */
+nav {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 0 15px #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+/* Glowing Effect on Navigation Links */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #12ecf3, #ac12f3);
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+nav ul li a:hover::before {
+    opacity: 1;
+}
+
+nav ul li a:hover {
+    color: #6d1414;
+    box-shadow: 0 0 10px #e209c5;
+}
+
+
+/* Glowing Button Effect */
+.btn {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #444;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px 5px #e209c5;
+    color: #6d1414;
+    background: linear-gradient(135deg, #12ecf3, #ac12f3)
+}
+
+/* Sections */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 50px; /* To offset the fixed navbar */
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* General Section Styles */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 50px; /* Offset for fixed navbar */
+}
+
+
+/* Box Container */
+.box {
+    background-color: #1a1a1a;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Glowing Effect on Hover */
+.box:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 20px 5px #e209c5;
+}
+
+/* Home Section Specific Styles */
+#home .box {
+    background: linear-gradient(135deg, #1f1f1f, #292929); /* Subtle gradient */
+}
+
+/* About Me Section Specific Styles */
+#about .box {
+    background: linear-gradient(135deg, #2c2c2c, #383838);
+}
+
+
+/* General Box Styles */
+.box {
+    background-color: #1a1a1a;
+    padding: 50px;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Glowing Effect on Hover */
+.box:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 20px 5px #e209c5;
+}
+
+/* Portfolio Section Specific Styles */
+#projects .box {
+    background: linear-gradient(135deg, #292929, #343434); /* Subtle gradient */
+}
+
+/* Contact Section Specific Styles */
+#contact .box {
+    background: linear-gradient(135deg, #2c2c2c, #383838);
+    text-align: center;
+}
+
+/* Highlighted Keywords */
+.keyword-highlight {
+    font-weight: bold;
+    color: #12ecf3;  /* Orange color for emphasis */
+}
+
+/* Optional: Hover Effect for Keywords */
+.keyword-highlight:hover {
+    text-shadow: 0 0 10px #e209c5;
+}
+
+/* General Project Image Styling */
+.project-image {
+    width: 100%;            /* Makes the image responsive */
+    max-width: 500px;       /* Sets a maximum width */
+    height: auto;           /* Maintains the aspect ratio */
+    border-radius: 10px;    /* Optional: Rounds the corners */
+}
+
+.project-image2 {
+    width: 100%;            /* Makes the image responsive */
+    max-width: 500px;       /* Sets a maximum width */
+    height: auto;           /* Maintains the aspect ratio */
+    border-radius: 110px;    /* Optional: Rounds the corners */
+}
+
+
+.project-image4 {
+    width: 100%;            /* Makes the image responsive */
+    max-width: 950px;       /* Sets a maximum width */
+    height: auto;           /* Maintains the aspect ratio */
+    border-radius: 10px;    /* Optional: Rounds the corners */
+}
+
+.project-image5 {
+    width: 100%;            /* Makes the image responsive */
+    max-width: 950px;       /* Sets a maximum width */
+    height: auto;           /* Maintains the aspect ratio */
+    border-radius: 10px;    /* Optional: Rounds the corners */
+}
+
+.project-image6 {
+    width: 100%;            /* Makes the image responsive */
+    max-width: 950px;       /* Sets a maximum width */
+    height: auto;           /* Maintains the aspect ratio */
+    border-radius: 10px;    /* Optional: Rounds the corners */
+}
+
+
+
+
+
+
+
